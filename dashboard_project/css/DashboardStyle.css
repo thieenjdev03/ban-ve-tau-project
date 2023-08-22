@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  box-sizing: 0px;
+}
+.header__nav-items {
+  width: 1440px;
+  height: 55px;
+  padding: 9px 89px 10px 30px;
+  background: #171717;
+}
+.nav-item {
+  width: 71px;
+  height: 21px;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.user-information {
+}
+.user-avatar {
+}
+.userName {
+}
+.container {
+}
+.container__sidebar-left {
+}
+.container__main-content {
+}
+.main-content__searching-section {
+}
+.searching-section__title {
+}
+.searching-section__btnAdd {
+}
+.searching-section__btnsetting {
+}
+.searching-section__searching-module {
+}

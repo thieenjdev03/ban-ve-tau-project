@@ -1,0 +1,56 @@
+[{ 
+    "id" : 1,
+    "nameStationleft":"Ga Sài Gòn",
+    "cityStationLeft": "Hồ Chí Minh",
+    "date-start":"03/04 - 09/04",
+    "name-station__right":"Ga Hà Nội",
+    "city-station-right":"Hà Nội",
+    "price-tickets":"943.000VNĐ"
+},
+{ 
+    "id" : 2,
+    "nnameStationleft":"Ga Sài Gòn",
+    "cityStationLeft": "Hồ Chí Minh",
+    "date-start":"03/04 - 09/04",
+    "name-station__right":"Ga Hà Nội",
+    "city-station-right":"Hà Nội",
+    "price-tickets":"943.000VNĐ"
+},
+{ 
+    "id" : 3,
+    "nnameStationleft":"Ga Sài Gòn",
+    "cityStationLeft": "Hồ Chí Minh",
+    "date-start":"03/04 - 09/04",
+    "name-station__right":"Ga Hà Nội",
+    "city-station-right":"Hà Nội",
+    "price-tickets":"943.000VNĐ"
+},
+
+{ 
+    "id" : 4,
+    "nnameStationleft":"Ga Sài Gòn",
+    "cityStationLeft": "Hồ Chí Minh",
+    "date-start":"03/04 - 09/04",
+    "name-station__right":"Ga Hà Nội",
+    "city-station-right":"Hà Nội",
+    "price-tickets":"943.000VNĐ"
+},
+{ 
+    "id" : 5,
+    "innameStationleft":"Ga Sài Gòn",
+    "cityStationLeft": "Hồ Chí Minh",
+    "date-start":"03/04 - 09/04",
+    "name-station__right":"Ga Hà Nội",
+    "city-station-right":"Hà Nội",
+    "price-tickets":"943.000VNĐ"
+},
+{ 
+    "id" : 6,
+    "innameStationleft":"Ga Sài Gòn",
+    "cityStationLeft": "Hồ Chí Minh",
+    "date-start":"03/04 - 09/04",
+    "name-station__right":"Ga Hà Nội",
+    "city-station-right":"Hà Nội",
+    "price-tickets":"943.000VNĐ"
+}
+]

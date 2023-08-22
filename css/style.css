@@ -1,0 +1,242 @@
+#popular_train {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 1084px;
+  align-items: center;
+}
+
+.popular_train--heading-text {
+  font-family: Roboto Slab;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #17696a;
+}
+.train_cards {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+}
+#list-item-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.list-item-column {
+  display: flex;
+}
+.card_item {
+  width: 290px;
+  height: 162px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 20px;
+}
+.date-start {
+  margin-top: 10px;
+  font-family: Roboto Slab;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.over-station_locate {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 18px;
+}
+.information-station__left {
+  text-align: left;
+  margin-left: 10px;
+}
+.city-station-right {
+  font-family: Roboto Slab;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.fa-arrow-right {
+  margin-top: 4px;
+}
+.information-station__left > p {
+  margin: 2px;
+  gap: 4px;
+}
+.list-name {
+  width: 280px;
+}
+.information-station__right {
+  text-align: right;
+  margin: 2px;
+  gap: 4px;
+}
+.city-station-left {
+  font-family: Roboto Slab;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.information-station__left > .name-station {
+  font-family: Roboto Slab;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.information-station__right > p {
+  margin: 2px;
+}
+.line-card_item {
+  width: 290px;
+  height: 0px;
+  margin-top: 8px;
+  border: 0.5px dashed rgba(0, 0, 0, 0.5);
+  transform: rotate(-0.15deg);
+}
+.ticket-price-section {
+  display: flex;
+  flex-direction: row;
+  font-family: Roboto Slab;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828181;
+  margin-top: 14px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.price-tickets > h4 {
+  font-family: Roboto Slab;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 146px;
+  margin: 0px;
+}
+.price-tickets > h4 > span {
+  font-size: 14px !important;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.ticket-price-section > img {
+  margin-left: 68px;
+}
+
+/* Catelogies Image CSS */
+
+#catelogies-image {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  gap: 145px;
+}
+.first-section-image {
+  display: flex;
+  flex-direction: row;
+
+  height: 541px;
+}
+.images-section-single > img {
+  width: 564.59px;
+  height: 445px;
+  border-radius: 20px;
+}
+.desc-section {
+  display: flex;
+  flex-direction: column;
+  width: 604px;
+  height: 320px;
+  gap: 14px;
+}
+.desc-section > .desc__header-text {
+  width: 148px;
+  border-radius: nullpx;
+  font-family: Roboto Slab;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 24px;
+  letter-spacing: 0.175em;
+  text-align: left;
+  margin: 0;
+
+  color: #17696a;
+}
+.desc-section > .desc__primary-text {
+  max-width: 604px;
+  height: 165px !important;
+  display: flex;
+  width: 604px;
+  height: 165px;
+
+  font-family: Roboto Slab;
+  font-size: 42px;
+  font-weight: 100;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+
+  max-height: 110px;
+  border-radius: nullpx;
+}
+.desc-section > .desc__sub-text {
+  max-width: 556px;
+  max-height: 99px;
+  margin: 0;
+
+  font-family: Roboto Slab;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.second-section-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1420px;
+  height: 614.418px;
+  flex-shrink: 0;
+}
+.images-section-column {
+  display: flex;
+  flex-direction: column;
+}
+.images-section-column > img {
+  border-radius: 14.25px;
+}
+.images-section-column__number1 {
+  width: 200.164px;
+  height: 229px;
+  flex-shrink: 0;
+}
+.images-section-column__number2 {
+  width: 200.164px;
+  height: 317.045px;
+  flex-shrink: 0;
+  margin-top: 48px;
+}
+.images-section-single {
+  width: 564.589px;
+  height: 445px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
