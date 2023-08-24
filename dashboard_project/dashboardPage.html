@@ -6,29 +6,291 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dashboard_project/css/DashboardStyle.css">
+    <script src="https://kit.fontawesome.com/0607d6f524.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
     <title>Bán Vé Tàu</title>
 </head>
 <header>
     <div class="header__nav-items">
-        <div href="#" class="nav-item">Trang Chủ</div>
-        <div href="#" class="nav-item">Cài Đặt</div>
+        <div href="#" class="nav-item"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Trang Chủ</div>
+        <div href="#" class="nav-item"><i class="fa-solid fa-gear" style="color: #ffffff;"></i> Cài Đặt</div>
+        <div class="user-information">
+            <img src="/dashboard_project/img/avatar-user.png" alt="" class="user-avatar">
+            <span class="userName">Admin123</span>
+        </div>
     </div>
-    <div class="user-information">
-        <img src="" alt="" class="user-avatar">
-        <span class="userName">Admin123</span>
-    </div>
+
 </header>
 <div class="container">
     <div class="container__sidebar-left">
     </div>
-    <div class="container__main-content">
+    <div class="container__right-section">
         <div class="main-content__searching-section">
-            <span class="searching-section__title">
+            <span class="poppins-font-title searching-section__title">
                 Thêm mới vé
             </span>
-            <a href="" class="searching-section__btnAdd"><i>+</i> Thêm Nội Dung</a>
-            <a href="" class="searching-section__btnsetting"><i>*</i> Cài Đặt</a>
-            <input type="text" name="" id="" class="searching-section__searching-module" placeholder="Tìm Kiếm Icon">
+            <a href="" class="poppins-font-sub searching-section__btnAdd"><i>+</i> Thêm Nội Dung</a>
+            <a href="" class="poppins-font-sub searching-section__btnsetting"><i>*</i> Cài Đặt</a>
+            <div style="position:absolute;
+            right:30px;
+            border: 1px solid #D4D4D4;
+            padding-right:6px; 
+            border-radius:5px">
+                <input type="text" name="" id="" class="searching-section__searching-module" placeholder="Tìm Kiếm " >
+                <i class="fa fa-user icon"></i>
+            </div>
+        </div>
+        <div class="container__main-content">
+            <div class="main-content__summary-section">
+                <div class="summary-list">
+                    <div class="summary-item">
+                        <div class="icon-item"><i class="fa-solid fa-bag-shopping" style="color: #ea580c;"></i></i></div>
+                        <div class="summary-item-right">
+                            <div class="summary-item__title">Tổng số vé</div>
+                            <div class="summary-item__total-number">1,360</div>
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="icon-item"><i class="fa-solid fa-bag-shopping" style="color: #ea580c;"></i></i></div>
+                        <div class="summary-item-right">
+                            <div class="summary-item__title">Tổng số vé</div>
+                            <div class="summary-item__total-number">1,360</div>
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="icon-item"><i class="fa-solid fa-bag-shopping" style="color: #ea580c;"></i></i></div>
+                        <div class="summary-item-right">
+                            <div class="summary-item__title">Tổng số vé</div>
+                            <div class="summary-item__total-number">1,360</div>
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="icon-item"><i class="fa-solid fa-bag-shopping" style="color: #ea580c;"></i></i></div>
+                        <div class="summary-item-right">
+                            <div class="summary-item__title">Tổng số vé</div>
+                            <div class="summary-item__total-number">1,360</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content__ticket-list-section">
+                <div class="ticket-list-section__title">
+                    <span class="poppins-font-title top__titlte-section ">
+                        Thêm / chỉnh sửa vé tàu
+                    </span>
+                    <br>
+                    <span class="desc-text poppins-font-sub">Với quyền admin bạn có thể thêm/ sửa vé tàu theo quy định và thông tin vé đã được cung cấp</span>
+                </div>
+                <div class="ticket-list-section__error-alert">
+                    <i class="fa-solid fa-circle-info" style="color: #7f1d1d;"></i>
+                    <span class="poppins-font-sub">Bạn đã thêm thất bại/ Bạn đã chỉnh sửa thất bại/ ...</span>
+                </div>
+                <div class="ticket-list-section__list">
+                    <table>
+                        <tr>
+                          <th>Id</th>
+                          <th>Ga đi</th>
+                          <th>Ga đến</th>
+                          <th>Giờ đi</th>
+                          <th>Giờ đến</th>
+                          <th>SL Tổng</th>
+                          <th>SL dư</th>
+                          <th>Chi tiết</th>
+
+                        </tr>
+                        <!-- Row data 1 -->
+                        <tr>
+                          <td>01</td>
+                          <td>Hồ Chí Minh</td>
+                          <td>Hà Nội</td>
+                          <td>20h00</td>
+                          <td>15h00</td>
+                          <td>121</td>
+                          <td>Hết sạch</td>
+                          <td>
+                            <button class = "editBtn">Edit</button>
+                            <button class = "deleteBtn">Delete</button>
+                          </td>
+                        </tr>
+                        <!-- Row data 2 -->
+                        <tr>
+                            <td>01</td>
+                            <td>Hồ Chí Minh</td>
+                            <td>Hà Nội</td>
+                            <td>20h00</td>
+                            <td>15h00</td>
+                            <td>121</td>
+                            <td>Hết sạch</td>
+                            <td>
+                              <button class = "editBtn">Edit</button>
+                              <button class = "deleteBtn">Delete</button>
+                            </td>
+                          </tr>
+                        <!-- Row data 3 -->
+                        <tr>
+                            <td>01</td>
+                            <td>Hồ Chí Minh</td>
+                            <td>Hà Nội</td>
+                            <td>20h00</td>
+                            <td>15h00</td>
+                            <td>121</td>
+                            <td>Hết sạch</td>
+                            <td>
+                              <button class = "editBtn">Edit</button>
+                              <button class = "deleteBtn">Delete</button>
+                            </td>
+                          </tr>
+                        <!-- Row data 4 -->
+                        <tr>
+                            <td>01</td>
+                            <td>Hồ Chí Minh</td>
+                            <td>Hà Nội</td>
+                            <td>20h00</td>
+                            <td>15h00</td>
+                            <td>121</td>
+                            <td>Hết sạch</td>
+                            <td>
+                              <button class = "editBtn">Edit</button>
+                              <button class = "deleteBtn">Delete</button>
+                            </td>
+                          </tr>
+                      </table>
+                </div>
+                <div class="ticket-list-section__list__pageNumber--btn">
+                    <button class = "backPageBtn"><i class="fa-solid fa-angles-right" style="color: #262626;"></i></button>
+                    <button class = "pageNumber">1</button>
+                    <button class = "pageNumber">2</button>
+                    <button class = "pageNumber">3</button>
+                    <button class = "pageNumber">4</button>
+                    <button class = "pageNumber">5</button>
+                    <button class = "nextPageBtn"><i class="fa-solid fa-angles-right" style="color: #262626;"></i></button>
+                </div>
+            </div>
+            <div class="main-content__user-list-section">
+                <div class="ticket-list-section__title">
+                    <span class="poppins-font-title top__titlte-section ">
+                        Thông tin Khách Hàng
+                    </span>
+                    <br>
+                    <span class="desc-text poppins-font-sub">Với quyền nhân viên, bạn sẽ xem được thông tin của khách hàng để có thể quản lý</span>
+                </div>
+                <div class="ticket-list-section__list">
+                    <table>
+                        <tr>
+                          <th>Id</th>
+                          <th>Ga đi</th>
+                          <th>Ga đến</th>
+                          <th>Giờ đi</th>
+                          <th>Giờ đến</th>
+                          <th>SL Tổng</th>
+                          <th>SL dư</th>
+                          <th>Chi tiết</th>
+
+                        </tr>
+                        <!-- Row data 1 -->
+                        <tr>
+                          <td>01</td>
+                          <td>Hồ Chí Minh</td>
+                          <td>Hà Nội</td>
+                          <td>20h00</td>
+                          <td>15h00</td>
+                          <td>121</td>
+                          <td>Hết sạch</td>
+                          <td>
+                            <button class = "editBtn">Edit</button>
+                            <button class = "deleteBtn">Delete</button>
+                          </td>
+                        </tr>
+                        <!-- Row data 2 -->
+                        <tr>
+                            <td>01</td>
+                            <td>Hồ Chí Minh</td>
+                            <td>Hà Nội</td>
+                            <td>20h00</td>
+                            <td>15h00</td>
+                            <td>121</td>
+                            <td>Hết sạch</td>
+                            <td>
+                              <button class = "editBtn">Edit</button>
+                              <button class = "deleteBtn">Delete</button>
+                            </td>
+                          </tr>
+                        <!-- Row data 3 -->
+                        <tr>
+                            <td>01</td>
+                            <td>Hồ Chí Minh</td>
+                            <td>Hà Nội</td>
+                            <td>20h00</td>
+                            <td>15h00</td>
+                            <td>121</td>
+                            <td>Hết sạch</td>
+                            <td>
+                              <button class = "editBtn">Edit</button>
+                              <button class = "deleteBtn">Delete</button>
+                            </td>
+                          </tr>
+                        <!-- Row data 4 -->
+                        <tr>
+                            <td>01</td>
+                            <td>Hồ Chí Minh</td>
+                            <td>Hà Nội</td>
+                            <td>20h00</td>
+                            <td>15h00</td>
+                            <td>121</td>
+                            <td>Hết sạch</td>
+                            <td>
+                              <button class = "editBtn">Edit</button>
+                              <button class = "deleteBtn">Delete</button>
+                            </td>
+                          </tr>
+                      </table>
+                </div>
+                <div class="ticket-list-section__list__pageNumber--btn">
+                    <button class = "backPageBtn"><i class="fa-solid fa-angles-right" style="color: #262626;"></i></button>
+                    <button class = "pageNumber">1</button>
+                    <button class = "pageNumber">2</button>
+                    <button class = "pageNumber">3</button>
+                    <button class = "pageNumber">4</button>
+                    <button class = "pageNumber">5</button>
+                    <button class = "nextPageBtn"><i class="fa-solid fa-angles-right" style="color: #262626;"></i></button>
+                </div>
+            </div>
+            <div class="main-content__info-staff-section">
+                <span class="poppins-font-title top__titlte-section ">
+                    Thông tin Nhân Viên
+                </span>
+                <div class="info-staff-section--staffName">
+                    <label for = staffName class = "desc-text poppins-font-sub">Họ và tên</label><br>
+                    <input type="option" name="TenNV" id="staffName" placeholder="Điền Tên">
+                </div>
+                <div id="info-staff-section--staffRole">
+                    <form id="inputForm--staffRole">
+                        <label for="dropdown">Phân Quyền</label><br>
+                        <select id="dropdown">
+                          <option value="option1">Quản Lý</option>
+                          <option value="option2">Nhân Viên</option>
+                          <option value="option3">Bảo Vệ</option>
+                        </select>
+                      </form>
+                </div>
+                <div style = "display:flex;
+                gap:20px">
+                    <div class="info-staff-section--staffEmail">
+                        <label class = "desc-text poppins-font-sub">Email</label><br>
+                        <input type="text" name="TenNV" id="staffName" placeholder="Điền Email">
+                    </div>
+                    <div class="info-staff-section--staffPassword">
+                        <label class = "desc-text poppins-font-sub">Mật khẩu</label><br>
+                        <input type="text" name="TenNV" id="staffName" placeholder="Điền mật khẩu">
+                    </div>
+                </div>
+                <div class="info-staff-section--staffNote">
+                    <label for = staffName class = "desc-text poppins-font-sub">Ghi Chú</label><br>
+                    <input type="option" name="TenNV" id="staffNote" placeholder="Nội dung ghi chú">
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -40,3 +302,4 @@
 
 </html>
 <script src="/dashboard_project/js/DashboardScript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>

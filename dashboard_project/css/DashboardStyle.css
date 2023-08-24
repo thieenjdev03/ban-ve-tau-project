@@ -1,43 +1,347 @@
 * {
   margin: 0px;
   box-sizing: 0px;
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.poppins-font-title {
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 22px;
+  color: #262626;
+}
+.poppins-font-sub {
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #262626;
+  text-decoration: none;
 }
 .header__nav-items {
-  width: 1440px;
+  position: relative;
+  display: flex;
+  width: 100%;
   height: 55px;
-  padding: 9px 89px 10px 30px;
   background: #171717;
+  align-items: center;
 }
 .nav-item {
-  width: 71px;
+  position: relative;
+  left: 30px;
+  width: 120px;
   height: 21px;
   color: #ffffff;
-  font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  margin-right: 25px;
   letter-spacing: 0em;
-  text-align: left;
 }
 .user-information {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: Hug (124px);
+  height: Hug (36px);
+  left: 90%;
+  padding: 3px 15px 3px 3px;
+  border-radius: 36px;
+  gap: 5px;
 }
+
 .user-avatar {
 }
 .userName {
 }
 .container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 .container__sidebar-left {
+  height: 3000px;
+  width: 260px;
+  top: 55px;
+  background: #262626;
+}
+.container__right-section {
+  height: 3000px;
+  background-color: antiquewhite;
+  width: 100%;
 }
 .container__main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 30px;
+  height: 3000px;
 }
 .main-content__searching-section {
+  display: flex;
+  position: positive;
+  width: 100%;
+  height: 77px;
+  top: 55px;
+  gap: 30px;
+  padding-left: 30px;
+  align-items: center;
+  background: #ffffff;
+  margin-bottom: 30px;
 }
-.searching-section__title {
+.searching-section__title,
+top__titlte-section {
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .searching-section__btnAdd {
+  width: Hug (149px);
+  height: Hug (24px);
+  gap: 5px;
 }
 .searching-section__btnsetting {
+  width: Hug (86px);
+  height: Hug (24px);
+  gap: 5px;
 }
 .searching-section__searching-module {
+  width: 350px;
+  height: Hug (44px);
+  top: 16px;
+  left: 800px;
+  padding: 10px;
+  border: none;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: FFFFFF;
+}
+.main-content__summary-section {
+  width: 100%;
+  height: 100px;
+  gap: 20px;
+}
+.summary-list {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 92px;
+}
+.summary-item {
+  display: flex;
+  width: 265px;
+  height: 91px;
+  border-radius: 10px;
+  gap: 10px;
+  background-color: #ffffff;
+  justify-content: left;
+  align-items: center;
+}
+.icon-item > i {
+  width: 36px;
+  height: 37.5px;
+  font-size: 36px;
+  top: 3.75px;
+  left: 7.5px;
+  margin-left: 20px;
+}
+.summary-item-right {
+  width: Fill (170px);
+  height: Hug (51px);
+}
+.summary-item__title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.summary-item__total-number {
+  width: 56px;
+  height: 33px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.main-content__ticket-list-section,
+.main-content__user-list-section,
+.main-content__info-staff-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: Hug (1, 120px);
+  max-height: 20009px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.ticket-list-section__title {
+}
+.desc-text {
+}
+.ticket-list-section__error-alert {
+  width: Fixed (1, 060px);
+  height: Hug (54px);
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px;
+  gap: 10px;
+  background: linear-gradient(0deg, #fef2f2, #fef2f2), linear-gradient(0deg, #fef2f2, #fef2f2);
+  border: 1px solid #f87171;
+}
+.ticket-list-section__error-alert > span {
+  color: rgba(127, 29, 29, 1);
+  padding-left: 10px;
+}
+
+.ticket-list-section__list {
+  height: 443px;
+  width: Fill (180px);
+  padding: 10px 20px 10px 20px;
+  gap: 20px;
+}
+/* Table Ticket List */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  max-height: 44px;
+  border: 1px #b1acac solid;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+th {
+  background-color: #d4d4d4;
+  color: #262626;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+.editBtn {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  background-color: #17696a;
+  width: Hug (32px);
+  height: Hug (24px);
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+  gap: 5px;
+  border: none;
+}
+.deleteBtn {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  background: #b81d1d;
+  width: Hug (32px);
+  height: Hug (24px);
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+  gap: 5px;
+  border: none;
+}
+
+.deleteBtn:hover {
+  box-shadow: #171717;
+}
+.ticket-list-section__list__pageNumber--btn {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.nextPageBtn,
+.backPageBtn {
+  background-color: #ffffff;
+  border: none;
+}
+
+.pageNumber {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px;
+  gap: 5px;
+  border: 1px solid #a3a3a3;
+  background-color: #ffffff;
+}
+.pageNumber:hover {
+  background-color: #17696a;
+  color: #ffffff;
+}
+.backPageBtn {
+  transform: rotate(180deg);
+}
+.main-content__info-staff-section {
+  width: 780px;
+  height: 574px;
+  padding: 30px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+/* .dropdown-selection CSS */
+
+#info-staff-section--staffRole > label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#inputForm--staffRole > select {
+  display: block;
+  border-radius: 5px;
+  width: 720px;
+  height: 44px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  gap: 10px;
+}
+
+/* End */
+.info-staff-section--staffName > input,
+.info-staff-section--staffNote > input,
+.info-staff-section--staffEmail > input,
+.info-staff-section--staffPassword > input {
+  width: 720px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  border: 1px;
+  gap: 10px;
+  border: 1px solid #d4d4d4;
+}
+
+.info-staff-section--staffEmail > input,
+.info-staff-section--staffPassword > input {
+  width: 350px;
+}
+.info-staff-section--staffNote > input {
+  display: flex;
+  height: 165px;
 }
